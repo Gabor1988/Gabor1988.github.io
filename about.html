@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>About</title>
+</head>
+<body>
+   
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/pages/products.html">Products</a>
+        </li>
+        <li>
+            <a href="/pages/orders.html">Orders</a>
+        </li>
+        <li>
+            <a href="/about.html">About</a>
+        </li>
+    </ul>
+
+    <h1>About</h1>
+
+    <table>
+        <caption>Opening hours</caption>
+        <!-- a caption paranccsal lehet a táblázatnak címet/leírást adni -->
+        <thead>
+        <!-- a THEAD a táblázat fejléce, az oszlopok elnevezése -->
+            <tr>
+                <th>Day</th>
+                <!-- a TH az oszlop fejlécek, table header -->
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- ha van THEAD akkor kell TBODY is, ez az adattartalma a táblázatnak -->
+            <tr>
+                <!-- a TR a sor (table row) -->
+                <td>Monday - Friday</td>
+                <td>09:00</td>
+                <!-- a TD az oszlop vagy adat a TR-en belül -->
+                <td rowspan="2">21:00</td>
+                <!-- ROWSPAN a sor nyújtása / függőlegesen 2 sort egyesít / 2 sor magas a cella -->
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td colspan="2">Closed</td>
+                <!-- COLSPAN az oszlop nyújtás / 2 oszlop széles lesz a cella -->
+            </tr>
+        </tbody>
+        <tfoot>
+        <!-- a TFOOT a lábléc, de kell TR és TD is, hogy lent jelenjen meg -->
+            <tr>
+                <td colspan="3">
+                    &copy; 2020
+                </td>
+            </tr>
+        </tfoot>
+    </table>   
+
+
+</body>
+</html>
